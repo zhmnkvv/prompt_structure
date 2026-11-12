@@ -1,0 +1,699 @@
+{
+ "pricing_usd_per_mtok": {
+  "input": 4.0,
+  "cache_write_5m": 5.0,
+  "cache_write_1h": 8.0,
+  "cache_read": 0.2,
+  "output": 20.0
+ },
+ "pricing_source": "https://platform.claude.com/docs/en/about-claude/pricing",
+ "pricing_checked": "2026-11-12",
+ "experiments": {
+  "task1": {
+   "bad": {
+    "model": [
+     "claude-opus-5-5"
+    ],
+    "speed": [
+     "standard"
+    ],
+    "service_tier": [
+     "standard"
+    ],
+    "effort": [
+     "medium"
+    ],
+    "api_calls": 8,
+    "first_request_prompt_tokens": 48188,
+    "run": {
+     "input": 16,
+     "cache_write_5m": 69842,
+     "cache_write_1h": 0,
+     "cache_read": 428142,
+     "output": 6606,
+     "thinking": 879,
+     "prompt_side": 498000,
+     "total": 504606,
+     "cost_usd": 0.5670224,
+     "cost_if_no_cache_usd": 2.12412
+    },
+    "final_answer_request": {
+     "input": 2,
+     "cache_write_5m": 2097,
+     "cache_write_1h": 0,
+     "cache_read": 67745,
+     "output": 4853,
+     "thinking": 723,
+     "prompt_side": 69844,
+     "cost_usd": 0.121102
+    },
+    "final_answer_generation_s": 52.111,
+    "run_wall_clock_s": 126.908,
+    "prompt": {
+     "chars": 215,
+     "words": 30
+    },
+    "prompt_components": null,
+    "response": {
+     "chars": 9496,
+     "words": 1482
+    },
+    "calls": [
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:23:24.781Z",
+      "input": 2,
+      "cache_write_5m": 48186,
+      "cache_write_1h": 0,
+      "cache_read": 0,
+      "output": 252,
+      "thinking": 10
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:23:54.876Z",
+      "input": 2,
+      "cache_write_5m": 2975,
+      "cache_write_1h": 0,
+      "cache_read": 48186,
+      "output": 285,
+      "thinking": 0
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:24:05.955Z",
+      "input": 2,
+      "cache_write_5m": 10160,
+      "cache_write_1h": 0,
+      "cache_read": 51161,
+      "output": 122,
+      "thinking": 0
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:24:09.735Z",
+      "input": 2,
+      "cache_write_5m": 3662,
+      "cache_write_1h": 0,
+      "cache_read": 61321,
+      "output": 233,
+      "thinking": 99
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:24:23.447Z",
+      "input": 2,
+      "cache_write_5m": 2209,
+      "cache_write_1h": 0,
+      "cache_read": 64983,
+      "output": 355,
+      "thinking": 47
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:24:27.408Z",
+      "input": 2,
+      "cache_write_5m": 362,
+      "cache_write_1h": 0,
+      "cache_read": 67192,
+      "output": 149,
+      "thinking": 0
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:24:33.208Z",
+      "input": 2,
+      "cache_write_5m": 191,
+      "cache_write_1h": 0,
+      "cache_read": 67554,
+      "output": 357,
+      "thinking": 0
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:25:26.348Z",
+      "input": 2,
+      "cache_write_5m": 2097,
+      "cache_write_1h": 0,
+      "cache_read": 67745,
+      "output": 4853,
+      "thinking": 723
+     }
+    ]
+   },
+   "good": {
+    "model": [
+     "claude-opus-5-5"
+    ],
+    "speed": [
+     "standard"
+    ],
+    "service_tier": [
+     "standard"
+    ],
+    "effort": [
+     "medium"
+    ],
+    "api_calls": 6,
+    "first_request_prompt_tokens": 48598,
+    "run": {
+     "input": 12,
+     "cache_write_5m": 73564,
+     "cache_write_1h": 0,
+     "cache_read": 298196,
+     "output": 10679,
+     "thinking": 658,
+     "prompt_side": 371772,
+     "total": 382451,
+     "cost_usd": 0.6410872,
+     "cost_if_no_cache_usd": 1.700668
+    },
+    "final_answer_request": {
+     "input": 2,
+     "cache_write_5m": 2072,
+     "cache_write_1h": 0,
+     "cache_read": 71492,
+     "output": 9510,
+     "thinking": 400,
+     "prompt_side": 73566,
+     "cost_usd": 0.21486639999999999
+    },
+    "final_answer_generation_s": 85.964,
+    "run_wall_clock_s": 137.239,
+    "prompt": {
+     "chars": 1171,
+     "words": 170
+    },
+    "prompt_components": {
+     "TASK": {
+      "chars": 152,
+      "words": 22
+     },
+     "CONTEXT": {
+      "chars": 283,
+      "words": 42
+     },
+     "FORMAT": {
+      "chars": 362,
+      "words": 50
+     },
+     "EXAMPLE": {
+      "chars": 337,
+      "words": 52
+     }
+    },
+    "response": {
+     "chars": 22511,
+     "words": 3669
+    },
+    "calls": [
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:23:25.197Z",
+      "input": 2,
+      "cache_write_5m": 48596,
+      "cache_write_1h": 0,
+      "cache_read": 0,
+      "output": 263,
+      "thinking": 16
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:23:48.336Z",
+      "input": 2,
+      "cache_write_5m": 9418,
+      "cache_write_1h": 0,
+      "cache_read": 48596,
+      "output": 160,
+      "thinking": 0
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:23:52.414Z",
+      "input": 2,
+      "cache_write_5m": 202,
+      "cache_write_1h": 0,
+      "cache_read": 58014,
+      "output": 122,
+      "thinking": 0
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:24:00.712Z",
+      "input": 2,
+      "cache_write_5m": 3662,
+      "cache_write_1h": 0,
+      "cache_read": 58216,
+      "output": 275,
+      "thinking": 93
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:24:10.432Z",
+      "input": 2,
+      "cache_write_5m": 9614,
+      "cache_write_1h": 0,
+      "cache_read": 61878,
+      "output": 349,
+      "thinking": 149
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:25:36.851Z",
+      "input": 2,
+      "cache_write_5m": 2072,
+      "cache_write_1h": 0,
+      "cache_read": 71492,
+      "output": 9510,
+      "thinking": 400
+     }
+    ]
+   },
+   "prompt_token_delta_good_minus_bad": 410
+  },
+  "task2": {
+   "bad": {
+    "model": [
+     "claude-opus-5-5"
+    ],
+    "speed": [
+     "standard"
+    ],
+    "service_tier": [
+     "standard"
+    ],
+    "effort": [
+     "medium"
+    ],
+    "api_calls": 7,
+    "first_request_prompt_tokens": 48174,
+    "run": {
+     "input": 14,
+     "cache_write_5m": 101352,
+     "cache_write_1h": 0,
+     "cache_read": 448027,
+     "output": 9003,
+     "thinking": 1643,
+     "prompt_side": 549393,
+     "total": 558396,
+     "cost_usd": 0.7764814,
+     "cost_if_no_cache_usd": 2.377632
+    },
+    "final_answer_request": {
+     "input": 2,
+     "cache_write_5m": 2581,
+     "cache_write_1h": 0,
+     "cache_read": 98771,
+     "output": 5805,
+     "thinking": 940,
+     "prompt_side": 101354,
+     "cost_usd": 0.14876720000000002
+    },
+    "final_answer_generation_s": 58.704,
+    "run_wall_clock_s": 170.971,
+    "prompt": {
+     "chars": 132,
+     "words": 19
+    },
+    "prompt_components": null,
+    "response": {
+     "chars": 10080,
+     "words": 1615
+    },
+    "calls": [
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:23:28.409Z",
+      "input": 2,
+      "cache_write_5m": 48172,
+      "cache_write_1h": 0,
+      "cache_read": 0,
+      "output": 246,
+      "thinking": 9
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:23:50.932Z",
+      "input": 2,
+      "cache_write_5m": 2971,
+      "cache_write_1h": 0,
+      "cache_read": 48172,
+      "output": 214,
+      "thinking": 0
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:24:00.637Z",
+      "input": 2,
+      "cache_write_5m": 5152,
+      "cache_write_1h": 0,
+      "cache_read": 51143,
+      "output": 293,
+      "thinking": 0
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:24:08.119Z",
+      "input": 2,
+      "cache_write_5m": 39657,
+      "cache_write_1h": 0,
+      "cache_read": 56295,
+      "output": 441,
+      "thinking": 111
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:24:13.142Z",
+      "input": 2,
+      "cache_write_5m": 1742,
+      "cache_write_1h": 0,
+      "cache_read": 95952,
+      "output": 389,
+      "thinking": 44
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:24:34.673Z",
+      "input": 2,
+      "cache_write_5m": 1077,
+      "cache_write_1h": 0,
+      "cache_read": 97694,
+      "output": 1615,
+      "thinking": 539
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:26:10.741Z",
+      "input": 2,
+      "cache_write_5m": 2581,
+      "cache_write_1h": 0,
+      "cache_read": 98771,
+      "output": 5805,
+      "thinking": 940
+     }
+    ]
+   },
+   "good": {
+    "model": [
+     "claude-opus-5-5"
+    ],
+    "speed": [
+     "standard"
+    ],
+    "service_tier": [
+     "standard"
+    ],
+    "effort": [
+     "medium"
+    ],
+    "api_calls": 13,
+    "first_request_prompt_tokens": 48637,
+    "run": {
+     "input": 28,
+     "cache_write_5m": 88604,
+     "cache_write_1h": 0,
+     "cache_read": 766288,
+     "output": 20432,
+     "thinking": 2072,
+     "prompt_side": 854920,
+     "total": 875352,
+     "cost_usd": 1.0050296,
+     "cost_if_no_cache_usd": 3.82832
+    },
+    "final_answer_request": {
+     "input": 4,
+     "cache_write_5m": 8881,
+     "cache_write_1h": 0,
+     "cache_read": 79723,
+     "output": 7810,
+     "thinking": 0,
+     "prompt_side": 88608,
+     "cost_usd": 0.2165656
+    },
+    "final_answer_generation_s": 50.157,
+    "run_wall_clock_s": 340.547,
+    "prompt": {
+     "chars": 1232,
+     "words": 181
+    },
+    "prompt_components": {
+     "TASK": {
+      "chars": 118,
+      "words": 17
+     },
+     "CONTEXT": {
+      "chars": 405,
+      "words": 63
+     },
+     "FORMAT": {
+      "chars": 403,
+      "words": 58
+     },
+     "EXAMPLE": {
+      "chars": 269,
+      "words": 39
+     }
+    },
+    "response": {
+     "chars": 17380,
+     "words": 2634
+    },
+    "calls": [
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:23:25.797Z",
+      "input": 2,
+      "cache_write_5m": 48635,
+      "cache_write_1h": 0,
+      "cache_read": 0,
+      "output": 265,
+      "thinking": 9
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:24:27.886Z",
+      "input": 2,
+      "cache_write_5m": 3092,
+      "cache_write_1h": 0,
+      "cache_read": 48635,
+      "output": 296,
+      "thinking": 0
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:25:50.400Z",
+      "input": 2,
+      "cache_write_5m": 713,
+      "cache_write_1h": 0,
+      "cache_read": 51727,
+      "output": 294,
+      "thinking": 0
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:26:01.088Z",
+      "input": 2,
+      "cache_write_5m": 1011,
+      "cache_write_1h": 0,
+      "cache_read": 52440,
+      "output": 239,
+      "thinking": 0
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:26:04.739Z",
+      "input": 2,
+      "cache_write_5m": 1410,
+      "cache_write_1h": 0,
+      "cache_read": 53451,
+      "output": 156,
+      "thinking": 0
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:26:09.226Z",
+      "input": 2,
+      "cache_write_5m": 1061,
+      "cache_write_1h": 0,
+      "cache_read": 54861,
+      "output": 123,
+      "thinking": 0
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:26:14.688Z",
+      "input": 2,
+      "cache_write_5m": 14986,
+      "cache_write_1h": 0,
+      "cache_read": 55922,
+      "output": 407,
+      "thinking": 52
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:26:21.979Z",
+      "input": 2,
+      "cache_write_5m": 1852,
+      "cache_write_1h": 0,
+      "cache_read": 70908,
+      "output": 445,
+      "thinking": 130
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:26:26.719Z",
+      "input": 2,
+      "cache_write_5m": 465,
+      "cache_write_1h": 0,
+      "cache_read": 72760,
+      "output": 343,
+      "thinking": 0
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:26:33.208Z",
+      "input": 2,
+      "cache_write_5m": 674,
+      "cache_write_1h": 0,
+      "cache_read": 73225,
+      "output": 300,
+      "thinking": 69
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:26:43.390Z",
+      "input": 2,
+      "cache_write_5m": 4838,
+      "cache_write_1h": 0,
+      "cache_read": 73899,
+      "output": 923,
+      "thinking": 743
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:28:10.045Z",
+      "input": 2,
+      "cache_write_5m": 986,
+      "cache_write_1h": 0,
+      "cache_read": 78737,
+      "output": 8831,
+      "thinking": 1069
+     },
+     {
+      "model": "claude-opus-5-5",
+      "speed": "standard",
+      "service_tier": "standard",
+      "effort": "medium",
+      "timestamp": "2026-11-12T10:29:00.239Z",
+      "input": 4,
+      "cache_write_5m": 8881,
+      "cache_write_1h": 0,
+      "cache_read": 79723,
+      "output": 7810,
+      "thinking": 0
+     }
+    ]
+   },
+   "prompt_token_delta_good_minus_bad": 463
+  }
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "method": "Each answer is scored against the same checklist of what the student actually needs for the task (the items of the good prompt's FORMAT/EXAMPLE plus accuracy, honesty and, for Task 2, practical next steps). Every criterion is 0 = missing, 1 = partial, 2 = fully done. Quality Score = points / max points x 10. The scoring was done by Claude (the same model family that wrote the answers) after reading both answers in full, so it is a judgement, not an automatic metric; the reason for every score is given so it can be checked.",
+ "task1": {
+  "criteria": [
+   {"id": "goal", "name": "Project goal explained", "bad": 1, "good": 2,
+    "why": "Bad: one line ('сайт-помощник по кампусу'). Good: separate section with project goal and Sprint 5 goal."},
+   {"id": "sections", "name": "Report broken down by its sections", "bad": 1, "good": 2,
+    "why": "Bad: only the 4 stories. Good: all 8 report sections incl. 'How it was verified' and 'Beyond the stories'."},
+   {"id": "terms", "name": "Technical terms in plain language", "bad": 1, "good": 2,
+    "why": "Bad: 8 process terms from the tables. Good: 22 terms incl. Postgres, API, 404, SQL, time zone, commit."},
+   {"id": "order", "name": "Order of the oral defense", "bad": 0, "good": 2,
+    "why": "Bad: none. Good: 7 steps with timing and a demo path."},
+   {"id": "speech_en", "name": "Natural speech in English", "bad": 1, "good": 2,
+    "why": "Bad: a usable speech, but in Russian. Good: full speech in English."},
+   {"id": "qa", "name": "Teacher questions, answers in English with Russian notes", "bad": 1, "good": 2,
+    "why": "Bad: 8 questions, Russian only. Good: 18 questions, English answers + Russian notes."},
+   {"id": "details", "name": "Key technical details to know", "bad": 0, "good": 2,
+    "why": "Bad: no separate list (only a tip about US18). Good: dedicated 'know by heart' list."},
+   {"id": "template", "name": "Per feature: what / problem / how / how to tell", "bad": 0, "good": 1,
+    "why": "Bad: not used. Good: complete for US17 and US18; US19 and US20 lack 'how to tell'."},
+   {"id": "accuracy", "name": "Facts match the report", "bad": 1, "good": 2,
+    "why": "Bad: states the LC&HV expansion as a fact although the report does not define it. Good: no such claims found."},
+   {"id": "honesty", "name": "Marks what the report does not say", "bad": 0, "good": 2,
+    "why": "Bad: no such marks. Good: flags undefined labels and lists what not to claim (framework, OCR, scraping, routing)."}
+  ]
+ },
+ "task2": {
+  "criteria": [
+   {"id": "goal", "name": "Project goal explained", "bad": 1, "good": 2,
+    "why": "Bad: only implied (topic fits 1.1, 4 genres). Good: separate section with a ready sentence for the teacher."},
+   {"id": "data", "name": "Data processing stages", "bad": 1, "good": 2,
+    "why": "Bad: listed in one line. Good: 7-step table (code / why) with real counts."},
+   {"id": "tfidf", "name": "TF-IDF: what, why, how", "bad": 1, "good": 2,
+    "why": "Bad: strong formula part, little on why it is used. Good: what, why, where used, how, example."},
+   {"id": "nb", "name": "Naive Bayes principle", "bad": 0, "good": 2,
+    "why": "Bad: principle not explained. Good: prior, likelihood, smoothing, 'naive' assumption; notes NB runs on CountVectorizer."},
+   {"id": "cv", "name": "Train/test split and cross-validation", "bad": 1, "good": 2,
+    "why": "Bad: covered only in a few Q&A lines. Good: separate section (1648/413, stratify, 5-fold, Pipeline)."},
+   {"id": "multilabel", "name": "Genre classification and several genres per book", "bad": 1, "good": 2,
+    "why": "Bad: one sentence on the 'exactly one genre' rule. Good: section with pros, cons and the multi-label alternative."},
+   {"id": "qa", "name": "Teacher questions with answers", "bad": 2, "good": 2,
+    "why": "Both: ~14 and 18 relevant questions with answers."},
+   {"id": "results", "name": "Results and errors in plain words", "bad": 2, "good": 2,
+    "why": "Both: baseline vs model, class imbalance, Mystery never predicted, main confusion pairs."},
+   {"id": "template", "name": "Per method: what / why / how / explain / example", "bad": 0, "good": 2,
+    "why": "Bad: not used. Good: used for TF-IDF, Naive Bayes and train/test + CV."},
+   {"id": "real_data", "name": "Uses only real project results", "bad": 1, "good": 2,
+    "why": "Bad: adds numbers from its own new runs (macro-F1 0.56, accuracy 0.794) that are not in the notebook. Good: only project files; derived/approximate values are marked."},
+   {"id": "next_steps", "name": "Practical next steps to finish the assignment", "bad": 2, "good": 1,
+    "why": "Bad: checks the assignment PDF and gives a concrete to-do list. Good: only 'Run All' and the list of manual parts."}
+  ]
+ }
+}
